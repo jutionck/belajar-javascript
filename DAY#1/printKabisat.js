@@ -15,4 +15,5 @@ function printTahunKabisat(tahun) {
 }
 
 // Result
+printTahunKabisat(2020);
 printTahunKabisat(2019);

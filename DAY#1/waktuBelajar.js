@@ -21,4 +21,8 @@ function printMessage(jam) {
 }
 
 // Result
+printMessage(9)
+printMessage(12)
+printMessage(4)
+printMessage(25)
 printMessage(20)
