@@ -21,4 +21,7 @@ function printSuaraBinatang(binatang) {
     console.log(SwitchCase(convertToLower));
 }
 
-printSuaraBinatang('KUDA')
+printSuaraBinatang('kucing')
+printSuaraBinatang('anjing')
+printSuaraBinatang('sapi')
+printSuaraBinatang('kuda')
