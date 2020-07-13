@@ -3,21 +3,21 @@ function Login() {
     let password = document.getElementById("password").value;
     if (username == "" && password =="") {
         alert("Username dan password harus diisi")
+        return false
     } else if(username != "jution") {
         alert("Maaf username yang anda masukkan salah!")
+        return false
     } else if (password != "jution") {
         alert("Maaf password yang anda masukkan salah!")
+        return false
     } else if (username != "jution" && password != "jution") {
         alert("Username atau passowrd salah!")
+        return false
     } else {
-        redirect()
+        return true;
     }
 }
 
-function redirect() {
-    let url = "index.html";
-    window.location(url);
-}
 
 function listBiodata() {
 
@@ -70,3 +70,10 @@ const Result = async () => {
 
 
 Result().then().catch((err)=> console.log(err));
+
+
+
+function getBiodata() {
+
+
+}

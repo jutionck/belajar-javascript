@@ -1,41 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Halaman Biodata</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Halaman Login - Livecode</title>
 </head>
 <body>
+
     <div class="container">
         <div class="row mt-5">
-            <div class="col">
-                <div class="card">
-                    <h5 class="card-header">List Biodata</h5>
-                    <div class="card-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Alamar</th>
-                                    <th>No Telp</th>
-                                </tr>
-                            </thead>
-                            <tbody id="listBiodata">
-
-                            </tbody>
-                        </table>
+            <div class="col-md-7">
+                <form method="post" action="biodata.html"
+                      onsubmit="return Login()">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control input-login" id="username" placeholder="Masukkan username" name="username">
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control input-login" id="password" placeholder="Masukkan Password" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary login-proses">Login</button>
+                </form>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+<!-- Optional JavaScript -->
+    <script src="script.js" type="text/javascript"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
