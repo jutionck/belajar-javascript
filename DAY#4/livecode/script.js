@@ -21,19 +21,39 @@ function redirect() {
 
 function listBiodata() {
 
-    let biodata = {
-        nama: "Jution Candra Kirana",
-        alamat: "Jl Bumi Manti IV Kel Kampung Baru, Kec Labuhan Ratu, Bandar Lampung",
-        no_telp: "082180221160"
-    };
+    let biodata = [
+        {
+            nama: "Jution Candra Kirana",
+            alamat: "Jl Bumi Manti IV Kel Kampung Baru, Kec Labuhan Ratu, Bandar Lampung",
+            no_telp: "082180221160"
+        },
+        {
+            nama: "Destry Faradila Nur'avisa",
+            alamat: "Jl Kepayang Ragom Gawi, Rajabasa, Bandar Lampung",
+            no_telp: "082292929929"
+        },
+        {
+            nama: "Dinda Aditiya",
+            alamat: "Jl Abdul Kadir, Gg Murai, Bandar Lampung",
+            no_telp: "085783081202"
+        }
+    ];
 
-    document.getElementById("listBiodata").innerHTML = `
-        <h3 class="card-title">${biodata.nama}</h3>
-        <blockquote class="blockquote mb-0">
-            <p>${biodata.alamat}</p>
-            <footer class="blockquote-footer"><cite title="Source Title">${biodata.no_telp}</cite></footer>
-        </blockquote>
+    let listBiodata = '';
+    let printBiodata = biodata;
+    let no = 1;
+    printBiodata.forEach(row => {
+        listBiodata += `
+                <tr>
+                    <td>${no}</td>   
+                    <td>${row.nama}</td>   
+                    <td>${row.alamat}</td>   
+                    <td>${row.no_telp}</td>
+                 </tr>   
         `;
+        no++;
+    });
+    document.getElementById("listBiodata").innerHTML = listBiodata
 
 }
 
