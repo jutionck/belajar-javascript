@@ -1,4 +1,6 @@
-const verifyLogin = (username, password) => {
+const Login = () => {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
     if (username == "" && password =="") {
         alert("Username dan password harus diisi")
         return false
@@ -12,14 +14,9 @@ const verifyLogin = (username, password) => {
         alert("Username atau passowrd salah!")
         return false
     } else {
+        alert(`Selamat datang ${username}`)
         return true;
     }
-}
-
-const Login = () => {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-    verifyLogin(username, password)
 }
 
 

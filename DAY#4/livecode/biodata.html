@@ -15,19 +15,27 @@
         <div class="row mt-5">
             <div class="col">
                 <div class="card">
-                    <h5 class="card-header">List Biodata</h5>
+                    <div class="card-header">
+                        <div class="row align-item-center">
+                            <div class="col">
+                                <h5 class="mb-0">List Biodata</h5>
+                            </div>
+                            <div class="col text-right">
+                                <a href="index.html" class="btn btn-danger btn-sm" onclick=" return confirm('Anda akan keluar pada halaman ini?')">Logout</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>No</th>
                                     <th>Nama</th>
-                                    <th>Alamar</th>
+                                    <th>Alamat</th>
                                     <th>No Telp</th>
                                 </tr>
                             </thead>
                             <tbody id="listBiodata">
-
                             </tbody>
                         </table>
                     </div>
