@@ -70,10 +70,3 @@ const Result = async () => {
 
 
 Result().then().catch((err)=> console.log(err));
-
-
-
-function getBiodata() {
-
-
-}
