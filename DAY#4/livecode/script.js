@@ -1,6 +1,4 @@
-function Login() {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+const verifyLogin = (username, password) => {
     if (username == "" && password =="") {
         alert("Username dan password harus diisi")
         return false
@@ -18,9 +16,14 @@ function Login() {
     }
 }
 
+const Login = () => {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    verifyLogin(username, password)
+}
 
-function listBiodata() {
 
+const listBiodata = () => {
     let biodata = [
         {
             nama: "Jution Candra Kirana",
