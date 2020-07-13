@@ -1,6 +1,8 @@
 const Login = () => {
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+    let getUsername = document.getElementById("username").value;
+    let getPassword = document.getElementById("password").value;
+    let username = getUsername.toLowerCase();
+    let password = getPassword.toLowerCase();
     if (username == "" && password =="") {
         alert("Username dan password harus diisi")
         return false
